@@ -1,5 +1,7 @@
 const title = "The Tropical Grasslands";
 
+console.log("Loading JavaScript");
+
 /**
  * Use JavaScript to set the text inside the bubble.
  */
