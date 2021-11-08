@@ -1,0 +1,76 @@
+/* The sidebar menu */
+        .sidenav {
+            height: 100%;
+            /* Full-height: remove this if you want "auto" height */
+            width: 160px;
+            /* Set the width of the sidebar */
+            position: fixed;
+            /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            right: 0;
+            background-color: #111;
+            /* Black */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 20px;
+            padding-left: 0.35vh;
+            padding-right: 0.85vh;
+
+            border-left: 0.5vw solid var(--nav_separator);
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 3vh;
+            display: block;
+        }
+
+        .sidenav * {
+            color: #818181;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style page content */
+        .main {
+            margin-right: 17vw;
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+            padding-top: 2.5vh;
+            padding-bottom: 2.5vh;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .noselect {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+        }
