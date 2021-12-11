@@ -6,7 +6,7 @@
 .about-items {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
-    direction: rtl;
+    direction: ltr;
     margin-left: 5vw;
     margin-right: 5vw;
 
@@ -31,6 +31,11 @@
 .section-title::before {
     counter-increment: segments;
     content: '\A7'counter(segments)'. ';
+}
+
+.stabilizer {
+    display: grid;
+    grid-template-rows: 55vh 1fr;
 }
 
 .content {
