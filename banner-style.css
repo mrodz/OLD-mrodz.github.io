@@ -1,0 +1,148 @@
+.main-header {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    max-height: 70vh;
+    z-index: 500;
+}
+
+.header-padding {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.name-section {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 0;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+    animation-name: slide-from-left, fadeInBanner;
+    animation-duration: 2.25s, 2.25s;
+    animation-fill-mode: forwards, forwards;
+
+    -webkit-animation-name: slide-from-left, fadeInBanner;
+    -webkit-animation-duration: 2.25s, 2.25s;
+    -webkit-animation-fill-mode: forwards, forwards;
+
+}
+
+.dev-text {
+    animation-name: slide-from-right, fadeInBanner;
+    animation-duration: 2.25s, 1.5s;
+    animation-delay: 2s, 2s;
+    animation-fill-mode: forwards, forwards;
+
+    -webkit-animation-name: slide-from-right, fadeInBanner;
+    -webkit-animation-duration: 2.25s, 1.5;
+    -webkit-animation-delay: 2s, 2s;
+    -webkit-animation-fill-mode: forwards, forwards;
+
+    opacity: 0;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 0;
+}
+
+.announce-on-hover {
+    -webkit-animation: decreaseFontSize 0.2ms forwards;
+    animation: decreaseFontSize 200ms forwards;
+}
+
+.announce-on-hover:hover {
+    -webkit-animation: increaseFontSize 0.2ms forwards;
+    animation: increaseFontSize 200ms forwards;
+    /* font-size: 1.5em; */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes slide-from-left {
+    0% {
+        visibility: hidden;
+        transform: translateX(0vw);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateX(5vw);
+    }
+}
+
+@keyframes slide-from-right {
+    0% {
+        visibility: hidden;
+        transform: translateX(100vw);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateX(5vw);
+    }
+}
+
+@keyframes small-hover {
+    0% {
+        transform: translateY(0em);
+    }
+
+    50% {
+        transform: translateY(0.5em);
+    }
+
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+@keyframes decreaseFontSize {
+    0% {
+        background-color: red;
+        font-size: 150%;
+    }
+
+    100% {
+        background-color: aquamarine;
+        font-size: 100%;
+    }
+}
+
+@keyframes increaseFontSize {
+    0% {
+        background-color: aquamarine;
+        font-size: 100%;
+    }
+
+    100% {
+        background-color: red;
+        font-size: 150%;
+    }
+}
+
+@keyframes fadeInBanner {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
