@@ -52,10 +52,6 @@
 .hidden-header {
     opacity: 0  ;
 }
-/*
-.visible-header {
-    
-}*/
 
 @keyframes nav-fadeOut {
     from {
