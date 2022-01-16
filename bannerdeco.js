@@ -1,6 +1,7 @@
 const boxes = document.querySelectorAll('.box');
 const componentsToFadeIn = document.querySelectorAll('.offset-fade');
 const delay = millisFromSeconds(4.2);
+const continueButton = document.querySelector('.continue-button');
 
 console.log(`There are ${boxes.length} boxes`);
 
@@ -19,15 +20,24 @@ for (let i = 0; i < boxes.length; i++) {
 }
 
 componentsToFadeIn.forEach(box => {
-    box.classList.add('hidden')
-    box.setAttribute('style', `padding-top: ${topPadding}vh;`);
+    box.setAttribute('style', `padding-top: ${topPadding}vh; opacity: 0;`);
     topPadding -= paddingScale;
 });
+
+var isFirstPageRendered = false;
 
 setTimeout(() => {
     for (let i = 0; i < componentsToFadeIn.length; i++) {
         setTimeout(() => {
-            componentsToFadeIn[i].classList.remove('hidden');
+            componentsToFadeIn[i].classList.add('content');
+
+            if (i == componentsToFadeIn.length - 1) {
+                isFirstPageRendered = true;
+
+                setTimeout(() => {
+                    continueButton.setAttribute('style', 'display: inline;');
+                }, millisFromSeconds(1));
+            }
         }, i * (delay / 10))
     }
 }, delay);

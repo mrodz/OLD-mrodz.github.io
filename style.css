@@ -60,7 +60,9 @@
 }
 
 .hidden {
-    display: none !important;
+    opacity: 0;
+    /* visibility: hidden; */
+    /* display: none !important; */
 }
 
 .visually-hidden {
@@ -72,6 +74,10 @@ body {
     margin: 0 0;
     counter-reset: segments;
     overflow-x: hidden;
+}
+
+html {
+    overflow: hidden;
 }
 
 .tilted-line {
