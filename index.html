@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="sliding-animations.css">
+
     <script defer src="bannerdeco.js"></script>
     <script defer src="header.js"></script>
+    <script defer src="state-manager.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +26,7 @@
 
 <body>
     <!-- Make this look more aesthetically pleasing, right now it looks straight out of Google Slides. -->
-    <nav class="top-nav hidden-header">
+    <!-- <nav class="top-nav hidden-header">
         <div class="icon-wrapper">
             <svg class="icon" width="5vw" height="5vw" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="none" stroke-linecap="square"
@@ -43,78 +47,81 @@
             </svg>
             <div>Mateo Rodriguez</div>
         </div>
-    </nav>
-    <div class="main">
-        <div class="stabilizer">
-            <div class="main-header">
-                <div class="title-text">
-                    <div class="name-section">
-                        <span class="announce-on-hover header-padding">Mateo Rodriguez</span>
+    </nav> -->
+
+    <section id="first">
+        <div class="main">
+            <div class="stabilizer">
+                <div class="main-header">
+
+                    <div class="boxes" style="z-index: -50000;">
+                        <div></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
                     </div>
-                    <div class="dev-text">
-                        <span class="announce-on-hover header-padding">Upcoming Java Developer and CS Enthusiast</span>
+
+                    <div class="title-text">
+                        <div class="name-section">
+                            <span class="announce-on-hover header-padding">Mateo Rodriguez</span>
+                        </div>
+                        <div class="dev-text">
+                            <span class="announce-on-hover header-padding">Upcoming Java Developer and CS
+                                Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lr-padding">
+                    <section class="about-items offset-tops">
+                        <div class="section content offset-fade">
+                            <h4 class="section-title black-highlight">
+                                About Me
+                            </h4>
+                            <div>
+                                I'm a teenager, interested in computer science and programming as a whole. I specialize
+                                in
+                                the
+                                classic Java programming language but am also familiar with Python, IS6 JavaScript, and
+                                the
+                                basics of front-end development.
+                            </div>
+                        </div>
+                        <div class="section content offset-fade">
+                            <h4 class="section-title black-highlight">
+                                My Projects
+                            </h4>
+                            <div>
+                                <ul>
+                                    <li>Simple Games (Pong, Snake, and other classics)</li>
+                                    <li>Movie Theater Management System</li>
+                                    <li>Useful Shared Resources (Specialized Collections, Helpful utilities)</li>
+                                    <li>More!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section content offset-fade">
+                            <h4 class="section-title black-highlight">
+                                My Skills
+                            </h4>
+                            <div>
+                                <ul>
+                                    <li>Desktop Applications, with Java Swing</li>
+                                    <li>Command Line Applications (Java, Python)</li>
+                                    <li>Back-end infrastructure (JavaScript, Java Spring Boot)</li>
+                                    <li>Front-end architecture (HTML, CSS)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <div class="content offset-fade">
+                        <div class="tilted-line"></div>
                     </div>
                 </div>
             </div>
-
-            <section class="about-items offset-tops">
-                <div class="section content">
-                    <h4 class="section-title black-highlight">
-                        About Me
-                    </h4>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui faucibus
-                        in. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Tincidunt vitae semper
-                        quis lectus nulla at. Pellentesque elit ullamcorper dignissim cras. Mattis ullamcorper velit
-                        sed ullamcorper morbi tincidunt ornare massa. Justo eget magna fermentum iaculis eu non diam
-                        phasellus. Quis blandit turpis cursus in hac. Viverra justo nec ultrices dui sapien eget mi.
-                        Semper risus in hendrerit gravida rutrum quisque. Blandit cursus risus at ultrices mi tempus
-                        imperdiet nulla malesuada. Tincidunt dui ut ornare lectus sit amet est. Nulla facilisi cras
-                        fermentum odio eu feugiat pretium. At augue eget arcu dictum. Enim lobortis scelerisque
-                        fermentum dui faucibus. Elit eget gravida cum sociis. Ac turpis egestas sed tempus urna et
-                        pharetra.
-                    </div>
-                </div>
-                <div class="section content">
-                    <h4 class="section-title black-highlight">
-                        My Projects
-                    </h4>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui faucibus
-                        in. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Tincidunt vitae semper
-                        quis lectus nulla at. Pellentesque elit ullamcorper dignissim cras. Mattis ullamcorper velit
-                        sed ullamcorper morbi tincidunt ornare massa. Justo eget magna fermentum iaculis eu non diam
-                        phasellus. Quis blandit turpis cursus in hac. Viverra justo nec ultrices dui sapien eget mi.
-                        Semper risus in hendrerit gravida rutrum quisque. Blandit cursus risus at ultrices mi tempus
-                        imperdiet nulla malesuada. Tincidunt dui ut ornare lectus sit amet est. Nulla facilisi cras
-                        fermentum odio eu feugiat pretium. At augue eget arcu dictum. Enim lobortis scelerisque
-                        fermentum dui faucibus. Elit eget gravida cum sociis. Ac turpis egestas sed tempus urna et
-                        pharetra.
-                    </div>
-                </div>
-                <div class="section content">
-                    <h4 class="section-title black-highlight">
-                        My Future
-                    </h4>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui faucibus
-                        in. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Tincidunt vitae semper
-                        quis lectus nulla at. Pellentesque elit ullamcorper dignissim cras. Mattis ullamcorper velit
-                        sed ullamcorper morbi tincidunt ornare massa. Justo eget magna fermentum iaculis eu non diam
-                        phasellus. Quis blandit turpis cursus in hac. Viverra justo nec ultrices dui sapien eget mi.
-                        Semper risus in hendrerit gravida rutrum quisque. Blandit cursus risus at ultrices mi tempus
-                        imperdiet nulla malesuada. Tincidunt dui ut ornare lectus sit amet est. Nulla facilisi cras
-                        fermentum odio eu feugiat pretium. At augue eget arcu dictum. Enim lobortis scelerisque
-                        fermentum dui faucibus. Elit eget gravida cum sociis. Ac turpis egestas sed tempus urna et
-                        pharetra.
-                    </div>
-                </div>
-            </section>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

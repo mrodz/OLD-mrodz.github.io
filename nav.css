@@ -4,11 +4,11 @@
     z-index: 1000;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     margin-bottom: 1vh;
     width: 95vw;
 
-    border-radius: 12.5px;
+    border-radius:  0px 0px 12.5px 12.5px;
 }
 
 .nav-spacer {

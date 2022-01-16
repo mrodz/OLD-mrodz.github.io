@@ -7,10 +7,13 @@
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
     direction: ltr;
+    z-index: 5 !important;
+    column-gap: 3vw;
+}
+
+.lr-padding {
     margin-left: 5vw;
     margin-right: 5vw;
-
-    column-gap: 3vw;
 }
 
 .black-highlight {
@@ -26,6 +29,7 @@
     direction: ltr !important;
     max-width: 35vw;
     float: right;
+    z-index: 50;
 }
 
 .section-title::before {
@@ -35,7 +39,7 @@
 
 .stabilizer {
     display: grid;
-    grid-template-rows: 55vh 1fr;
+    grid-template-rows: 42.5vh 1fr;
 }
 
 .content {
@@ -68,6 +72,14 @@ body {
     margin: 0 0;
     counter-reset: segments;
     overflow-x: hidden;
+}
+
+.tilted-line {
+    width: 100%;
+    background-color: #d1c6c7;
+    border: solid #d1c6c7 5px;
+    transform: rotate(-2.5deg);
+    margin-bottom: 5vh;
 }
 
 @keyframes fadeIn {

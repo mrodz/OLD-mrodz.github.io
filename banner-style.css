@@ -1,6 +1,6 @@
 .main-header {
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
     max-height: 70vh;
     z-index: 500;
 }
@@ -12,6 +12,33 @@
     padding-bottom: 2.5vh;
 }
 
+.boxes {
+    display: grid;
+    grid-template-columns: 75vw 1.5fr 1fr;
+    z-index: 0 !important;
+    position: absolute;
+    top: 0;
+    z-index: -500;
+}
+
+.box {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+    margin-top: 5vh;
+
+    height: fit-content;
+
+    width: 6vh;
+
+    z-index: -50;
+}
+
+/*
+handle @media querries - todo later
+*/
 .name-section {
     font-weight: bold;
     font-size: 4rem;
@@ -112,24 +139,24 @@
 
 @keyframes decreaseFontSize {
     0% {
-        background-color: red;
+        background-color: #ff1100;
         font-size: 150%;
     }
 
     100% {
-        background-color: aquamarine;
+        background-color: #7fffd4;
         font-size: 100%;
     }
 }
 
 @keyframes increaseFontSize {
     0% {
-        background-color: aquamarine;
+        background-color: #7fffd4;
         font-size: 100%;
     }
 
     100% {
-        background-color: red;
+        background-color: #ff1100;
         font-size: 150%;
     }
 }

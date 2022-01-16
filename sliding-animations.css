@@ -1,0 +1,11 @@
+@keyframes slide-out-to-right {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(100vw);
+    }
+    
+}
