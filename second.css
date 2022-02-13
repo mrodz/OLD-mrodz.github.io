@@ -30,6 +30,8 @@
     align-items: center;
     text-align: left;
     height: 100%;
+    width: 80%;
+    z-index: 500;
 }
 
 body {
@@ -48,6 +50,7 @@ body {
     border-radius: 50%;
     width: 15vh;
     height: 15vh;
+    z-index: -1;
     position: absolute;
 }
 

@@ -2,7 +2,7 @@ const aboutMeItems = document.querySelectorAll('.about-items');
 const navBar = document.querySelector('.top-nav');
 var isActive = false;
 
-window.onscroll = function () { workHeader() };
+// window.onscroll = function () { workHeader() };
 
 function workHeader() {
     if (window.scrollY > aboutMeItems[0].getBoundingClientRect().top && !isActive) {
