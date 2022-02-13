@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="sliding-animations.css">
+    <link rel="stylesheet" href="second.css">
 
     <script defer src="bannerdeco.js"></script>
     <script defer src="header.js"></script>
@@ -18,37 +19,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Merriweather+Sans:wght@400;700;800&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="/media/icon.svg">
-    <link rel="alternate icon" href="/media/icon.ico">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+    <!-- <link rel="icon" type="image/svg+xml" href="/media/icon.svg"> -->
+    <!-- <link rel="alternate icon" href="/media/icon.ico"> -->
+    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01"> -->
 
 </head>
 
 <body>
-    <!-- Make this look more aesthetically pleasing, right now it looks straight out of Google Slides. -->
-    <!-- <nav class="top-nav hidden-header">
-        <div class="icon-wrapper">
-            <svg class="icon" width="5vw" height="5vw" xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="none" stroke-linecap="square"
-                stroke-miterlimit="10" viewBox="408.1 88.5 160.65 178.12">
-                <clipPath id="g1059c199c89_0_0.0">
-                    <path d="m0 0l960.0 0l0 540.0l-960.0 0l0 -540.0z" clip-rule="nonzero" />
-                </clipPath>
-                <g clip-path="url(#g1059c199c89_0_0.0)">
-                    <path fill="#cc0000"
-                        d="m408.09973 88.49606l0 108.220474l35.453705 -36.073135l0 -56.636536l55.664032 0l15.244446 -15.510803z"
-                        fill-rule="evenodd" />
-                    <path fill="#a4c2f4" d="m461.28085 158.39108l-53.18112 54.11023l0 54.11023l106.36218 -108.22046z"
-                        fill-rule="evenodd" />
-                    <path fill="#ffe599"
-                        d="m462.38864 113.29921l0 32.13202l62.04959 0l0 76.088455l44.312622 0l0 -108.220474z"
-                        fill-rule="evenodd" />
-                </g>
-            </svg>
-            <div>Mateo Rodriguez</div>
-        </div>
-    </nav> -->
-
     <section id="first">
         <div class="main">
             <div class="stabilizer">
@@ -122,7 +99,53 @@
     </section>
 
     <section id="second">
-        Page 2 <!-- pics of me, I want lots of boxes and other trendy designs - todo later -->
+        <div class="second-about-me-with-links">
+            <div class="second-image-text">
+                <div class="second-profile-wrapper">
+                    <img src="media/me.jpg" class="second-portrait">
+                    <div class="second-box"></div>
+                    <div class="second-box"></div>
+                </div>
+                <div class="second-about-me-text">
+                    <div>
+                        <div><b>Test</b></div>
+                        <div>Lorme Ipsum Dolor Sit Amet</div>
+                    </div>
+    
+                    <div class="second-circle"></div>
+                    <div class="second-circle"></div>
+                </div>
+            </div>
+            <div class="second-links-bubbles">
+                <!-- CLEAN UP LINKS! -->
+                <div>
+                    <!-- make the links have a bubble behind them that lights up on hover. -->
+                    <a href="https://discordapp.com/users/675520586713268308" target="_blank"
+                        rel="noopener noreferrer" class="tooltip">
+                        Discord
+                        <div class="tooltiptext">
+                            Contact me via Discord: mrod#1132
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/mrodz" target="_blank" rel="noopener noreferrer" class="tooltip">
+                        GitHub
+                        <div class="tooltiptext">
+                            Check out some of my projects on GitHub!
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:mateotrodriguez@gmail.com" target="_blank" rel="noopener noreferrer" class="tooltip">
+                        E-Mail
+                        <div class="tooltiptext">
+                            Contact me via e-mail: mateotrodriguez@gmail.com
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="continue-button" style="display: none;" onclick="applyChanges()">

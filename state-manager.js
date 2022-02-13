@@ -23,4 +23,8 @@ function applyChanges() {
     }
 }
 
-firstSlide.onwheel = handleScroll;
+if (firstSlide != null) {
+    firstSlide.onwheel = handleScroll;
+} else {
+    console.log("firstSlide does not exist");
+}

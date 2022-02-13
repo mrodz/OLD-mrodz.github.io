@@ -11,6 +11,11 @@
     column-gap: 3vw;
 }
 
+a {
+    color: unset;
+    text-decoration: none;
+}
+
 .lr-padding {
     margin-left: 5vw;
     margin-right: 5vw;

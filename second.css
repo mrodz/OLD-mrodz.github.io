@@ -1,0 +1,165 @@
+.second-portrait {
+    width: 20vw;
+    min-width: 20vw; 
+    height: auto;
+    z-index: 100;
+
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: calc((calc(51vh + 58.5vh) / 2) + calc((13.5vh + 6vh) / 2 - 20vw));
+}
+
+.second-image-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-profile-wrapper {
+    height: calc((calc(51vh + 58.5vh) / 2) + 20vh + calc((13.5vh + 6vh) / 2));
+    width: calc((calc(51vh + 58.5vh) / 2) + 20vh + calc((13.5vh + 6vh) / 2));
+}
+
+.second-about-me-with-links {
+    display: grid;
+    grid-template-rows: 1fr 10vh;
+    overflow: hidden;
+}
+
+.second-about-me-text {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    margin: 0 !important; /*REMOVE!!!!!*/
+}
+
+.second-box {
+    width: 60vh;
+    height: 60vh;
+    content: none;
+    position: absolute;
+}
+
+.second-circle {
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    position: absolute;
+}
+
+.second-circle:nth-child(2) {
+    background-color: rgb(190, 99, 99);
+    left: 40vw;
+    top: 20vh;
+}
+
+.second-circle:nth-child(3) {
+    background-color: rgb(199, 199, 90);
+    right: 10vw;
+    top: 60vh;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes fade-in-tooltip {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1000;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -10vw;
+
+    opacity: 0;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+    animation: fade-in-tooltip .5s forwards .25s;
+    -moz-animation: fade-in-tooltip .5s forwards .25s;
+    -webkit-animation: fade-in-tooltip .5s forwards .25s;
+}
+
+@keyframes second-link-hover {
+    0% {
+        background-color: rgba(247, 233, 233, 0);
+        text-decoration: none;
+    }
+
+    100% {
+        background-color: rgba(247, 233, 233, 100);
+        text-decoration: underline;
+    }
+}
+
+.second-links-bubbles > div {
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgba(247, 233, 233, 0);
+    padding: 1vh 1vw;
+}
+
+.second-links-bubbles > div:hover {
+    animation: second-link-hover 0.25s forwards;
+    -moz-animation: second-link-hover 0.25s forwards;
+    -webkit-animation: second-link-hover 0.25s forwards;
+}
+
+.second-links-bubbles {
+    display: flex;
+    justify-content: space-around;
+
+    border-radius: 25px;
+    background-color: rgb(236, 222, 222);
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.second-box:nth-child(2) {
+    margin-left: 6vh;
+    margin-top: 6vh;
+    z-index: 50;
+    border: solid #995e26 20px;
+}
+
+.second-box:nth-child(3) {
+    margin-left: 13.5vh;
+    margin-top: 13.5vh;
+    z-index: 75;
+    border: solid #0f692d 20px;
+}
