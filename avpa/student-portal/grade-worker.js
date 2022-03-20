@@ -27,12 +27,26 @@ updateCurrentPoints()
 
 function updateCurrentPoints() {
     var importantAssignment = document.querySelector('[data-important-grade]')
-    var typed = importantAssignment.value;
-
-    console.log(typed);
+    var bubble = document.getElementById('toggle-bubble')
+    var typed = importantAssignment.value
     
-    currentPoints = 130 + Number(typed);
-    gradeHeader.innerHTML = `${toGrade(currentPoints / totalPoints * 100)} (${(currentPoints/totalPoints).toFixed(2)*100}%, ${currentPoints}/${totalPoints})`
+    console.log(bubble);
+
+    currentPoints = 130 + Number(typed)
+
+    var p = currentPoints / totalPoints * 100
+
+    if (p > 80) {
+        console.log('pass!')
+        bubble.classList.add('pass')
+        bubble.classList.remove('fail')
+    } else {
+        console.log('fail...')
+        bubble.classList.add('fail')
+        bubble.classList.remove('pass')
+    }
+
+    gradeHeader.innerHTML = `${toGrade(p)} (${(currentPoints/totalPoints).toFixed(2)*100}%, ${currentPoints}/${totalPoints})`
 
 }
 

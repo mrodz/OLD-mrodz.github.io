@@ -45,8 +45,34 @@ body {
     padding: 1rem 0;
 }
 
+.fail {
+    animation: turn-red 1s forwards;
+}
+
+.pass {
+    animation: turn-green 1s forwards;
+}
+
+
+@keyframes turn-green {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes turn-red {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
 .assignment-bubble {
-    background-color: red;
     width: 3rem;
     height: 3rem;
     border-radius: 50px;
