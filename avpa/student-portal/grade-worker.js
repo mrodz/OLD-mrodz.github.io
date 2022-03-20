@@ -5,7 +5,9 @@ const gradeHeader = document.querySelector('[data-actual-grade]') // the one we'
 var totalPoints = 330;
 var currentPoints = 130;
 
-
+/**
+ * @deprecated
+ */
 const assignments = [
     buildAssignment('Syllabus', '10/10', 'Assignments', '9/27'),
     buildAssignment('Summer Reading Quiz', '39/40', 'Assessments', '9/30'),
