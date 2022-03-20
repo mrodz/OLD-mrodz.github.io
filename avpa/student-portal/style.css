@@ -124,7 +124,7 @@ body {
     padding: 1rem;
 
     display: grid;
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 23rem 1fr;
 }
 
 /* this is NOT the notebook; it is the curved "My Failing Students" */
