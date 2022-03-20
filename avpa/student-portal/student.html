@@ -11,15 +11,19 @@
                 <table>
                     <tr>
                         <td><b>Name:</b></td>
-                        <td>Sami %MIDDLE_NAME% %LAST_NAME%</td>
+                        <td>Samantha L. Fuller</td>
+                    </tr>
+                    <tr>
+                        <td><b>ID:</b></td>
+                        <td>600008972</td>
                     </tr>
                     <tr>
                         <td><b>Age:</b></td>
-                        <td>15</td>
+                        <td>16</td>
                     </tr>
                     <tr>
                         <td><b>Class Of:</b></td>
-                        <td>2025</td>
+                        <td>2024</td>
                     </tr>
                     <tr>
                         <td><b>Track:</b></td>
@@ -29,12 +33,12 @@
                         <td><b>Courses<br>Enrolled:</b></td>
                         <td>
                             <ol>
-                                <li>Geometry H.</li>
+                                <li>Algebra II H.</li>
                                 <li>P.E.</li>
-                                <li>English H.</li>
+                                <li>English 10 H.</li>
                                 <li>AP Spanish Language</li>
-                                <li>Global Issues H.</li>
-                                <li>Biology H.</li>
+                                <li>AP European History</li>
+                                <li>Chemistry H.</li>
                             </ol>
                         </td>
                     </tr>
@@ -44,13 +48,121 @@
 
         <div class="student-page-bottom">
             <div class="grade-wrapper">
-                <div>
-                    Grade
+                <div style="font-weight: bolder;">
+                    Course: Super Hard English Class
                 </div>
                 <div>
-                    A+
+                    <span data-actual-grade>
+                        A+
+                    </span>
                 </div>
             </div>
+            <div data-assignments-wrapper>
+                <span style="font-weight: lighter;">Assignments</span>
+
+                <!-- <template data-assignment-template> -->
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="67" data-user-grade-input data-important-grade
+                                onkeyup="updateCurrentPoints()">/<span data-grade-max-points>200</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Final Exam</div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Assessments</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>12/17</span>
+                    </div>
+                </div>
+
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="20" data-user-grade-input>/<span
+                                data-grade-max-points>20</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Reading Packet (November)</div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Assignments</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>12/1</span>
+                    </div>
+                </div>
+
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="25" data-user-grade-input>/<span
+                                data-grade-max-points>25</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Socratic Seminar #2</div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Speaking</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>11/22</span>
+                    </div>
+                </div>
+                <!---->
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="25" data-user-grade-input>/<span
+                                data-grade-max-points>25</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Socratic Seminar #1</div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Speaking</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>11/9</span>
+                    </div>
+                </div>
+
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="10" data-user-grade-input>/<span
+                                data-grade-max-points>10</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Connections to the real world Worksheet
+                    </div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Assignments</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>11/2</span>
+                    </div>
+                </div>
+
+                <div class="assignment-card" data-assignment-card>
+                    <div class="assignment-bubble">
+                        <div data-assignment-score>
+                            <input type="text" name="grade-input" value="50" data-user-grade-input>/<span
+                                data-grade-max-points>50</span>
+                        </div>
+                    </div>
+                    <div data-assignment-name class="assignment-vert-center">Midterm Quiz</div>
+                    <div class="assignment-vert-center">
+                        Category: <span data-assignment-category>Assessments</span>
+                    </div>
+                    <div class="assignment-vert-center">
+                        Published: <span data-assignment-date>10/19</span>
+                    </div>
+                </div>
+                <!-- </template> -->
+
+            </div>
+            <footer class="submit-grades">
+                <button onclick="alert('Submitted!\n---\nUpdated Grades for student: Samantha F.')">Submit</button>
+            </footer>
         </div>
 
     </div>

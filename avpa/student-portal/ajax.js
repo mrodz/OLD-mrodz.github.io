@@ -12,7 +12,10 @@ function switchToGrades() {
     httpRequest.onreadystatechange = () => {
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
+
                 viewport.innerHTML = httpRequest.responseText
+
+                addNewScript()
             } else {
                 alert(`ERROR! ${httpRequest.status}`)
             }
@@ -21,4 +24,13 @@ function switchToGrades() {
 
     httpRequest.open('GET', './student.html', true)
     httpRequest.send()
+
+    function addNewScript() {
+        let script = document.createElement('script')
+        script.setAttribute('src', './grade-worker.js')
+
+        let wrapper = document.querySelector('[data-assignments-wrapper]')
+
+        wrapper.appendChild(script)
+    }
 }

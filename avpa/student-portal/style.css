@@ -5,7 +5,64 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+
     margin: 0;
+}
+
+.submit-grades {
+    margin-top: 1rem;
+}
+
+[data-user-grade-input] {
+    width: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: right;
+    /* border-bottom: solid white 1px; */
+}
+
+[data-assignments-wrapper] {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+[data-assignment-name] {
+    font-weight: bold;
+}
+
+[data-assignment-score] {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.assignment-vert-center {
+    padding: 1rem 0;
+}
+
+.assignment-bubble {
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    /* display: flex; */
+    text-align: center;
+    color: #fff;
+}
+
+.assignment-card {
+    border-radius: 25px;
+    background-color: #fff;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 4rem 1fr 1fr 1fr;
+    margin-top: 1rem;
+    font-size: .9rem;
 }
 
 .student-page-top {
@@ -24,6 +81,8 @@ body {
 
 .grade-wrapper {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2rem;
 } 
 
 .profile-background {
@@ -59,7 +118,6 @@ body {
     padding-bottom: 1.5rem;
 
     background: linear-gradient(98deg, rgb(252, 248, 248), rgb(214, 211, 211));
-    font-family: 'Ubuntu', sans-serif;
 
     position: absolute;
     top: 40%;
@@ -78,7 +136,6 @@ body {
     border-top: solid #000 .4rem;
 
     color: rgb(252, 248, 248);
-    font-family: 'Ubuntu', sans-serif;
 
     padding-left: 3rem;
     padding-right: 1rem;
