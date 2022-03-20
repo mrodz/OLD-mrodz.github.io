@@ -12,41 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <script src="ajax.js" defer></script>
     <title>Gradebook Portal - Login</title>
 </head>
 
 <body>
-    <img src="bg.png" alt="My Failing Students" class="bg-image">
+    <div data-main-content>
+        <img src="bg.png" alt="My Failing Students" class="bg-image">
 
-    <div class="login-panel">
-        <header>
-            Administrator Login
-        </header>
+        <div class="login-panel">
+            <header>
+                Administrator Login
+            </header>
 
-        <div class="login-content">
-            <form action="" method="get" class="login-form-input">
-                <div class="login-form-input">
-                    <label for="username">Username: </label>
-                    <input type="text" name="username" required>
-                </div>
-                <div class="login-form-input">
-                    <label for="password">Password: </label>
-                    <input type="password" name="password" required>
-                </div>
-                <div class="login-form-input">
-                    <input type="button" value="Log In" class="login-button" id="login-button">
-                </div>
-            </form>
+            <div class="login-content">
+                <form action="" method="get" class="login-form-input">
+                    <div class="login-form-input">
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="login-form-input">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="login-form-input">
+                        <input type="button" value="Log In" class="login-button" id="login-button"
+                            onclick="switchToGrades()">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
     <div data-panel-wrapper>
         <template data-information-panel>
             <footer class="information-panel">
                 &copy;<span data-date></span>
                 <span data-website-name></span>
                 &mdash; <span data-version-id></span>
-                &mdash; Signed in to district <span data-district-name></span> (<u>change</u>)
+                &mdash; Set to district <span data-district-name></span> (<u>change</u>)
             </footer>
         </template>
 
