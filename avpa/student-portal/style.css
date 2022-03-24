@@ -101,8 +101,8 @@ body {
     height: 40vh;
     border: solid #000;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .grade-wrapper {
@@ -200,4 +200,66 @@ div .login-form-input {
 .login-form-input > input {
     display: table-cell;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("notebook.jpg") !important;
+    }
+    .bg-image {
+        display: none !important;
+    }
+    html {
+        font-size: 8pt;
+        overflow: hidden;
+    }
+    .student-page-top {
+        display: none !important;
+    }
+    .information-panel {
+        width: 100vw;
+        text-overflow: clip;
+    }
+    .assignment-card {
+        font-size: 6pt;
+    }
+    .profile-background {
+        margin: auto;
+    }
+    #grades-button {
+        display: none !important;
+    }
+    .login-panel {
+        min-width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-background {
+        grid-template-columns: 15rem 1fr;
+    }
+    .student-info {
+        font-size: .85rem;
+    }
+    .assignment-card, [data-assignment-score] {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-background {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .login-form-input > * > input {
+        max-width: 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-form-input > * > input {
+        max-width: 40vw;
+    }
 }
